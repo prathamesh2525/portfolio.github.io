@@ -11,7 +11,7 @@ body {
 .box {
   background: url("./assets/portfile.jpg");
   -webkit-background-size: cover;
-  filter: blur(3px) hue-rotate(360deg);
+  filter: blur(2px) hue-rotate(360deg);
   background-size: cover;
   background-position: center center;
   height: 300px;
