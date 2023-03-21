@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  background: url("./assets/portfile.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 30%;
+  }
+  /* 25%{
+        border-radius: 50% 30% 40% 50%/70% 20% 80% 50%;
+    } */
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  /* 75%{
+        border-radius: 39% 60% 45% 62%/10% 30% 50% 20%;
+    } */
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 30%;
+  }
+}
+
+/* .wavy {
+  background: linear-gradient(#dd3f31 0 0) var(--p, 0) 98% / var(--d, 0) 5px
+    no-repeat;
+  transition: 0.3s, background-position 0s 0.3s;
+}
+.wavy:hover {
+  --d: 35%;
+  --p: 0%;
+}
+.wavy::after {
+  text-decoration: underline;
+  --d: 35%;
+} */
+
+@keyframes animateline {
+  0% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(-56px);
+  }
+}
+
+.open-menu {
+  animation: openmenu 0.5s ease-in-out forwards;
+}
+
+@keyframes openmenu {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Second Page */
+
+.second-page {
+  min-height: 125vh;
+  color: rgba(255, 253, 253, 0.788);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+#about:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #1f2937, transparent);
+  z-index: 1000;
+}
+
+#about:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f2937 transparent;
+  z-index: 1000;
+  /* mix-blend-mode: color; */
+}
+
+.second-text {
+  padding: 5% 20%;
+  position: absolute;
+  z-index: 2;
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  .box {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .box {
+    height: 500px;
+    width: 500px;
+  }
+}

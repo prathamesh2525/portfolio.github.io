@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prathamesh | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/gsap.min.js"></script>
+
+  </head>
+  <body class="bg-gray-800 text-white relative ">
+    <header
+      class="sticky top-0 max-w-full bg-transparent z-10 backdrop-blur-lg m-auto p-2 px-12 lg:px-8 h-20 flex items-center"
+    >
+      <div class="w-full flex justify-between items-center">
+        <a
+          href="./index.html"
+          class="text-6xl font-bold bg-white cursor-pointer hover:bg-[#dd3f31] bg-clip-text text-transparent duration-500"
+        >
+          &lt;PM&gt;
+        </a>
+        <button id="hamburger-button" class="md:hidden text-3xl">
+          &#9776;
+        </button>
+        <div class="hidden md:block w-[35%] xl:w-[25%] md:mx-16">
+          <ul class="flex justify-around transition-all space-x-4">
+            <li
+              class="text-xl hover:bg-[#dd3f31] px-4 py-2 rounded-xl duration-300"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="text-xl hover:bg-[#dd3f31] px-4 py-2 rounded-xl duration-300"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              class="text-xl hover:bg-[#dd3f31] px-4 py-2 rounded-xl duration-300"
+            >
+              <a href="#projects">Projects</a>
+            </li>
+            <li
+              class="text-xl hover:bg-[#dd3f31] px-4 py-2 rounded-xl duration-300"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section
+        id="mobile-menu"
+        class="absolute bg-gray-800 top-0 left-0 w-full text-4xl flex-col justify-center origin-top open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8 transition-all"
+          aria-label="mobile"
+        >
+          <a
+            href="#hero"
+            class="w-full text-center py-6 hover:opacity-90 hover:text-[#dd3f31] duration-200"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="w-full text-center py-6 hover:text-[#dd3f31] duration-200"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="w-full text-center py-6 hover:text-[#dd3f31] duration-200"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="w-full text-center py-6 hover:text-[#dd3f31] duration-200"
+            >Contact</a
+          >
+        </nav>
+      </section>
+    </header>
+    <section class="h-[80vh] mt-48">
+      <div
+        class="max-w-[90%] h-[70%] m-auto flex flex-col xl:flex-row xl:justify-center px-40 items-center justify-around gap-32"
+      >
+        <div
+          class="flex justify-center items-center lg:w-[500px] xl:h-[40vh]"
+        >
+          <div class="box"></div>
+        </div>
+        <div class="text-center xl:text-left">
+          <h1
+            class="text-4xl xl:text-6xl bg-white hover:bg-[#dd3f31] bg-clip-text text-transparent duration-500"
+          >
+            Prathamesh Madniwale
+          </h1>
+          <p class="wavy mt-4 text-lg xl:text-2xl">Frontend Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+
+    <!-- <main class="w-full px-10 h-screen">
+      <div id="about" class=""><p>I am a Frontend Developer</p></div>
+    </main> -->
+    <section id="about" class="second-page overflow-hidden">
+      <video
+        class="smoke-video absolute h-full w-screen object-cover z-1"
+        src="./assets/orange-waves.mp4"
+        autoplay
+        muted
+      ></video>
+      <div class="second-text text-2xl lg:text-4xl xl:text-5xl">
+        <p class="text-container">
+          <span class="highlight">A Frontend Developer</span>
+          <span class="highlight">Computer Technology Graduate</span>
+          <span class="highlight"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+          >
+          <span class="highlight"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium.</span
+          >
+          <span class="highlight"
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+          >
+          <span class="highlight"
+            >Lorem ipsum, dolor sit amet consectetur adipisicing.</span
+          >
+          <br />
+          <br />
+          <a
+            href="https://twitter.com/2xprathamesh"
+            target="_blank"
+            class="hover:underline"
+            >Let's Connect</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Third Page -->
+    <section class="w-full p-10">
+      <div class="flex items-center space-x-4">
+        <div
+            class="w-0 h-0 border-l-[10px] border-l-transparent border-b-[20px] border-b-green-500 border-r-[10px] border-r-transparent"
+          ></div>
+          <h1 id="projects" class="my-10 text-6xl font-bold">Projects</h1>
+      </div>
+      
+      <div class="grid lg:grid-cols-2  gap-16">
+        <div class="flex flex-col justify-center items-center p-4 border border-gray-700 rounded-xl space-y-3">
+          <a href="https://moviehub-snowy.vercel.app" target="_blank"><img class="border border-gray-600 rounded-xl" src="./assets/movie.png" alt="Movie hub project image" /></a>
+          <a href="https://github.com/prathamesh2525/moviehub" target="_blank" class="text-2xl font-bold hover:underline">MovieHub</a>
+          <p class="text-lg">
+            Movie List App - fetched data from TMBD api.
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center p-4 border border-gray-700 rounded-xl space-y-3">
+          <a href="https://memefyi.vercel.app" target="_blank"><img class="border border-gray-600 rounded-xl" src="./assets/meme.png" alt="" /></a>
+          <p class="text-2xl font-bold hover:underline">Memify</p>
+          <a href="https://github.com/prathamesh2525/memefyi" target="_blank" class="text-lg">
+            A Meme Generator App with 99+ templates available, option to download as an image.
+          </a>
+        </div>
+
+        <div class="flex flex-col justify-center items-center p-4 border border-gray-700 rounded-xl space-y-3">
+          <a href="https://taskhub-sable.vercel.app/" target="_blank"><img class="border border-gray-600 rounded-xl" src="./assets/task.png" alt="" /></a>
+          <a href="https://github.com/prathamesh2525/taskmate-react-project" target="_blank" class="text-2xl font-bold hover:underline">TaskMate</a>
+          <p  class="text-lg">
+            A Note Taking App - Access the tasks anytime without data loss. Edit update options. with 4+ themes available
+          </p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center p-4 border border-gray-700 rounded-xl space-y-3">
+          <a href="https://image-gallery-fawn.vercel.app/" target="_blank"><img class="border border-gray-600 rounded-xl" src="./assets/tailwindp.png" alt="" /></a>
+          <a href="https://github.com/prathamesh2525/Tailwind-projects" target="_blank" class="text-2xl font-bold hover:underline">Responsive Projects</a>
+          <p class="text-lg">
+            Tailwind UI Projects - Fully responsive with live demo links
+          </p>
+        </div>
+
+        
+    </section>
+
+    <footer id="contact" class="w-full px-10 mt-10">
+      <div class="border-t-[1px]"></div>
+      <div class="flex flex-col justify-start space-y-4 my-8">
+        <h1 class="font-bold mb-4 flex items-center space-x-4">
+          <div
+            class="w-0 h-0 border-l-[10px] border-l-transparent border-b-[20px] border-b-green-500 border-r-[10px] border-r-transparent"
+          ></div>
+          <p class="text-5xl hover:text-green-400 transition duration-300">Contact</p>
+        </h1>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 transition-all max-w-xl">
+          <a
+            class="hover:opacity-70 duration-200"
+            href="https://github.com/prathamesh2525"
+            target="_blank"
+            >Github</a
+          >
+          <a class="hover:opacity-70 duration-200" href="https://twitter.com/2xprathamesh" target="_blank">Twitter</a>
+          <a class="hover:opacity-70 duration-200" href="https://www.linkedin.com/in/prathamesh-madniwale-142b601a6/" target="_blank">LinkedIn</a>
+          <a class="hover:opacity-70 duration-200" href="https://drive.google.com/file/d/1Il7vVhiMFUmXmhy7oN-H9y_7WL4otkxf/view?usp=share_link" target="_blank" download>Resume</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
