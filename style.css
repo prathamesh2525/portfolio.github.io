@@ -11,6 +11,7 @@ body {
 .box {
   background: url("./assets/portfile.jpg");
   -webkit-background-size: cover;
+  filter: blur(3px) hue-rotate(360deg);
   background-size: cover;
   background-position: center center;
   height: 300px;
@@ -112,7 +113,7 @@ body {
 .second-text {
   padding: 5% 20%;
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   font-weight: bold;
 }
 
@@ -123,10 +124,46 @@ body {
   }
 }
 
-
 @media (min-width: 600px) {
   .box {
     height: 500px;
     width: 500px;
   }
+}
+
+/* Technologies */
+
+.cube {
+  width: 80px;
+  height: 80px;
+}
+
+#html {
+  background-image: url("./logos/html.png");
+  background-size: cover;
+}
+
+#tailwind {
+  background-image: url("./logos/css.png");
+  background-size: cover;
+}
+
+#javascript {
+  background-image: url("./logos/js.png");
+  background-size: cover;
+}
+
+#react {
+  background-image: url("./logos/react.png");
+  background-size: cover;
+}
+
+#ts {
+  background-image: url("./logos/ts.png");
+  background-size: cover;
+}
+
+#solidity {
+  background-image: url("./logos/solidity.png");
+  background-size: cover;
 }
