@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     title: "AWS-ETL Pipeline",
     description: "Sales Data ETL Pipeline with AWS Glue and Redshift.",
-    image: "../../dist/assets/AWS-ETL.png",
+    image: "../../assets/AWS-ETL.png",
     category: "de",
     technologies: ["AWS", "Python", "Spark"],
     sourceUrl: "https://github.com/prathamesh2525/AWS-ETL",
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "ETL Pipeline for News Trend Analysis",
     description:
       "Analyzes news articles from multiple sources, processes the text with Apache Spark, and identifies the most trending topics",
-    image: "../../dist/assets/big-data-project (1).jpg",
+    image: "../../assets/big-data-project (1).jpg",
     category: "de",
     technologies: ["Python", "Spark", "HDFS", "PySpark", "HiveQL(SQL)"],
     sourceUrl:
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     description:
       "Develop a machine learning model that can accurately predict credit scores. This model can then be used by lenders to make more informed decisions about loan applications.",
     image:
-      "../../dist/assets/Blog_P4B_Can-credit-enquires-affect-your-credit-score.jpg",
+      "../../assets/Blog_P4B_Can-credit-enquires-affect-your-credit-score.jpg",
     category: "da",
     technologies: ["Python", "Machine Learning", "Flask", "Tableau"],
     sourceUrl: "https://github.com/prathamesh2525/Credit_Score_Prediction",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
       "Business Acquisition Analysis for Maven Movies – A MySQL Data Exploration Project",
     description:
       "Performed advanced SQL analysis on Maven Movies data to assess inventory, customer value, and brand strength, supporting strategic acquisition decisions.",
-    image: "../../dist/assets/mysql-data-analysis.png",
+    image: "../../assets/mysql-data-analysis.png",
     category: "da",
     technologies: ["MySQL"],
     sourceUrl: "https://mavenanalytics.io/project/31648",
