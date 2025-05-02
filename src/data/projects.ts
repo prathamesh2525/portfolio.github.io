@@ -14,7 +14,8 @@ export const projects: Project[] = [
   {
     title: "AWS-ETL Pipeline",
     description: "Sales Data ETL Pipeline with AWS Glue and Redshift.",
-    image: "../../assets/AWS-ETL.png",
+    image:
+      "https://github.com/prathamesh2525/assets/blob/master/AWS-ETL.png?raw=true",
     category: "de",
     technologies: ["AWS", "Python", "Spark"],
     sourceUrl: "https://github.com/prathamesh2525/AWS-ETL",
@@ -23,7 +24,8 @@ export const projects: Project[] = [
     title: "ETL Pipeline for News Trend Analysis",
     description:
       "Analyzes news articles from multiple sources, processes the text with Apache Spark, and identifies the most trending topics",
-    image: "../../assets/big-data-project (1).jpg",
+    image:
+      "https://github.com/prathamesh2525/assets/blob/master/big-data-project%20(1).jpg?raw=true",
     category: "de",
     technologies: ["Python", "Spark", "HDFS", "PySpark", "HiveQL(SQL)"],
     sourceUrl:
@@ -34,7 +36,7 @@ export const projects: Project[] = [
     description:
       "Develop a machine learning model that can accurately predict credit scores. This model can then be used by lenders to make more informed decisions about loan applications.",
     image:
-      "../../assets/Blog_P4B_Can-credit-enquires-affect-your-credit-score.jpg",
+      "https://github.com/prathamesh2525/assets/blob/master/Blog_P4B_Can-credit-enquires-affect-your-credit-score.jpg?raw=true",
     category: "da",
     technologies: ["Python", "Machine Learning", "Flask", "Tableau"],
     sourceUrl: "https://github.com/prathamesh2525/Credit_Score_Prediction",
@@ -46,7 +48,8 @@ export const projects: Project[] = [
       "Business Acquisition Analysis for Maven Movies – A MySQL Data Exploration Project",
     description:
       "Performed advanced SQL analysis on Maven Movies data to assess inventory, customer value, and brand strength, supporting strategic acquisition decisions.",
-    image: "../../assets/mysql-data-analysis.png",
+    image:
+      "https://github.com/prathamesh2525/assets/blob/master/mysql-data-analysis.png?raw=true",
     category: "da",
     technologies: ["MySQL"],
     sourceUrl: "https://mavenanalytics.io/project/31648",
